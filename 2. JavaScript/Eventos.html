@@ -6,11 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="">Clic aqui</button>
+    <button id="boton" onclick="mostarAletar()">Clic aqui</button>
+    <button id="boton" onmouseover="mostarAletar()">Clic aqui</button>
 </body>
 <script>
     function mostarAletar(){
-        alert('buton clicado')
+        var boton = document.getElementById('boton')
+        alert('boton clicado')
+        boton.style.color = 'blue';
     }
 </script>
 </html>
